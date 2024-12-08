@@ -3,15 +3,20 @@
 
 class Account {
     private:
-        int id;
-        int ownerId;
-        double balance;
+        int _id;
+        int _ownerId;
+        double _balance;
 
     public:
+        // Constructor
         Account(int id, int ownerId, double balance);
+
+        // getters
         int getId() const;
         int getOwnerId() const;
         double getBalance() const;
+
+        // methods
         void deposit(double amount);
         void withdraw(double amount);
 };

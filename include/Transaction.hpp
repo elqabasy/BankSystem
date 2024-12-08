@@ -7,18 +7,23 @@ using namespace std;
 
 class Transaction {
     private:
-        int id;
-        string type;
-        double amount;
-        int toAccountId;
-        int fromAccountId;
+        int _id;
+        string _type;
+        double _amount;
+        int _toAccountId;
+        int _fromAccountId;
 
     public:
+        // Constructor
         Transaction(int id, int fromAccountId, int toAccountId, double amount, const string& type);
+
+        // getters
         int getId() const;
-        string toString() const;
-        int getFromAccountId() const; // Add this method
+        int getFromAccountId() const;
         int getToAccountId() const; 
+
+        // methods
+        string toString() const;
 };
 
 #endif // TRANSACTION_HPP

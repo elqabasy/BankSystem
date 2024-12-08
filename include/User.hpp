@@ -5,16 +5,19 @@
 using namespace std;
 
 class User {
-private:
-    int id;
-    string name;
-    string email;
+    private:
+        int _id;
+        string _name;
+        string _email;
 
-public:
-    User(int id, const string& name, const string& email);
-    int getId() const;
-    string getName() const;
-    string getEmail() const;
+    public:
+        // Constructor
+        User(int id, const string& name, const string& email);
+
+        // getters
+        int getId() const;
+        string getName() const;
+        string getEmail() const;
 };
 
 #endif // USER_HPP
